@@ -9,18 +9,18 @@ function Proyectos(){
 
 
         {
-            name:"codebug",
-            descripcion:"proyecto realizado con el fin de aprobacion final del bootcamp de henry",
+            name:"CodeBug",
+            descripcion:"Proyecto realizado con el fin de aprobación final del bootcamp de henry",
             pict:CodeBug,
-            funcionalidad:"sitio web de consultas para iniciantes en la programacion",
+            funcionalidad:"Sitio web de consultas para iniciantes en la programación",
             tiempo:"3 1/2 semanas",
             link:"https://codebug-ten.vercel.app/"
         },
         {
-            name:"pi-food",
-            descripcion:"primer proyecto realizado en el bootcamp de henry",
+            name:"Pi-Food",
+            descripcion:"Primer proyecto realizado en el bootcamp de Henry",
             pict:PiFood,
-            funcionalidad:"simulacion de restaurante virtual",
+            funcionalidad:"Simulación de restaurante virtual",
             tiempo:"2 semanas",
             link:"https://pi-food-versel-v3.vercel.app/"
         }
@@ -28,7 +28,7 @@ function Proyectos(){
 
     return(
         <div id="proy">
-            <span className="titulo proyectos">PROYECTOS</span>
+            <span className="título proyctos">PROYECTOS</span>
             <div id="prts">
             {proyectos.map((p,i)=>{
                 return(
@@ -40,10 +40,10 @@ function Proyectos(){
                         </div>
                         <span className={hover===p.name?"showArrow":"hidden"}>{">"}</span>
                         <div className={hover===p.name?"show":"hidden"}> 
-                            <h1 className="showEl">{"nombre--> "+p.name}:</h1>
-                            <h2 className="showEl">{"que es--> "+p.descripcion}</h2>
-                            <h2 className="showEl">{"para que sive?--> "+p.funcionalidad}</h2>
-                            <h2 className="showEl">{"duracion--> "+ p.tiempo}</h2>
+                            <h1 className="showEl">{"Nombre--> "+p.name}:</h1>
+                            <h2 className="showEl">{"Qué es?--> "+p.descripcion}</h2>
+                            <h2 className="showEl">{"Para qué sirve?--> "+p.funcionalidad}</h2>
+                            <h2 className="showEl">{"Duración--> "+ p.tiempo}</h2>
                         </div>
                     </div>
                 )

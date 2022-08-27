@@ -47,7 +47,7 @@ const PortfolioSimple=()=>{
     // }
 
     const divs = ["pres","techs","proy","cont"]
-    const completDivs = ["presentacion","tecnologias","proyectos","contacto"]
+    const completDivs = ["presentación","tecnologías","proyectos","contacto"]
 
     let [actual,setActual] = useState("pres")
 

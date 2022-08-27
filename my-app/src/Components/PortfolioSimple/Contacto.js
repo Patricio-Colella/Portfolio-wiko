@@ -14,13 +14,13 @@ function Contacto(){
             <span className="titulo contacto" >CONTACTO</span>
             <div id="lib">
                 <h1 className="elLib" onMouseEnter={()=>setActual("mail")} onMouseLeave={()=>setActual("")}>
-                    {actual!=="mail"?<FiMail/>:<HiOutlineMailOpen/>}correo: patriciogabrielcolella@gmail.com    
+                    {actual!=="mail"?<FiMail/>:<HiOutlineMailOpen/>}Correo: patriciogabrielcolella@gmail.com    
                 </h1>
                 <a href="https://www.linkedin.com/in/patricio-colella/" className="elLib" onMouseEnter={()=>setActual("linkedin")} onMouseLeave={()=>setActual("")}> 
-                    {actual!=="linkedin"?<AiFillLinkedin/>:<BsLinkedin/>}linkedin
+                    {actual!=="linkedin"?<AiFillLinkedin/>:<BsLinkedin/>}LinkedIn
                 </a>
                 <h1 className="elLib" onMouseEnter={()=>setActual("phone")} onMouseLeave={()=>setActual("")}>
-                    {actual!=="phone"?<BsFillPhoneFill/>:<BsPhoneVibrateFill/>}numero de telefono:2665277765
+                    {actual!=="phone"?<BsFillPhoneFill/>:<BsPhoneVibrateFill/>}Número de teléfono:2665277765
                 </h1>
             </div>
             

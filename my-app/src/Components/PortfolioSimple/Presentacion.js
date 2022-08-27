@@ -5,7 +5,7 @@ function Presentacion(){
         <div id="pres">
             <span className="titulo">{">PATRICIO COLELLA<"}</span>
             <span className="subTitulo">"El Portafolio"</span>
-            <span className="texto">"Un apasionado por la programacion y  la logica en cualquiera de sus ambitos" </span> 
+            <span className="texto">"Un apasionado por la programación y  la lógica en cualquiera de sus ámbitos" </span> 
         </div>
     )   
 }

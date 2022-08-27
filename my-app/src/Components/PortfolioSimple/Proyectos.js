@@ -28,7 +28,7 @@ function Proyectos(){
 
     return(
         <div id="proy">
-            <span className="título proyctos">PROYECTOS</span>
+            <span className="titulo proyectos">PROYECTOS</span>
             <div id="prts">
             {proyectos.map((p,i)=>{
                 return(

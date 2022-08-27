@@ -20,7 +20,7 @@ function Proyectos(){
             name:"pi-food",
             descripcion:"primer proyecto realizado en el bootcamp de henry",
             pict:PiFood,
-            funcionalidad:"smulacion de restaurantew virtual",
+            funcionalidad:"simulacion de restaurante virtual",
             tiempo:"2 semanas",
             link:"https://pi-food-versel-v3.vercel.app/"
         }

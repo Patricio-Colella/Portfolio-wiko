@@ -7,6 +7,8 @@ import react from "./techs/react.png"
 import redux from "./techs/redux.png"
 import sequelize from "./techs/sequelize.jpg"
 import sql from "./techs/sql.png"
+import css from "./techs/css.png"
+import html from "./techs/html.png"
 
 
 function Conocimientos(){
@@ -19,12 +21,14 @@ function Conocimientos(){
         {name:"react",img:react,link:"https://reactjs.org/"},
         {name:"redux",img:redux,link:"https://redux.js.org/"},
         {name:"sequelize",img:sequelize,link:"https://sequelize.org/"},
-        {name:"sql",img:sql,link:"https://en.wikipedia.org/wiki/SQL"}
+        {name:"sql",img:sql,link:"https://en.wikipedia.org/wiki/SQL"},
+        {name:"css",img:css,link:"https://www.w3.org/Style/CSS/Overview.en.html"},
+        {name:"html",img:html,link:"https://html.com/"}
     ]
 
     return(
         <div id="con">
-            <span className="titulo"> Conocimientos</span>
+            <span className="titulo"> tecnologias</span>
             {
                 techs.map((t,i)=>{
                     return(

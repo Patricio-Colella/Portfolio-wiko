@@ -46,7 +46,9 @@ const PortfolioSimple=()=>{
 
     // }
 
-    const divs = ["pres","con","proy","cont"]
+    const divs = ["pres","techs","proy","cont"]
+    const completDivs = ["presentacion","tecnologias","proyectos","contacto"]
+
     let [actual,setActual] = useState("pres")
 
     // function previo(){
@@ -63,7 +65,7 @@ const PortfolioSimple=()=>{
             <div id="portfolio">
                 {/* <button onClick={()=>previo()} id="prev">{"<"}</button> */}
                 {
-                    actual==="con"?<Conocimientos/>
+                    actual==="techs"?<Conocimientos/>
                     :actual==="proy"?<Proyectos/>
                     :actual==="cont"?<Contacto/>
                     :<Presentacion/>
@@ -71,8 +73,8 @@ const PortfolioSimple=()=>{
             </div>
             <div id="searchBar">
                 <h1 >{"<Secciones>"}</h1>
-                {divs.map(d=>{
-                    return <div onClick={(e)=>setActual(e.target.innerText)}>{d}</div>
+                {divs.map((d,i)=>{
+                    return <div onMouseLeave={(e)=>e.target.innerText=actual===d?d:"-"} onMouseEnter={(e)=>e.target.innerText=completDivs[i]} className={actual===d?"active":"inactive"} onClick={(e)=>setActual(d)}>{actual===d?d:"-"}</div>
                 })}
                 <h1 >{"</Secciones>"}</h1>
             </div>

@@ -343,6 +343,9 @@
     transform: scale(3, 4)
 }
 
+.con{
+    left: 28%;
+}
 
 
 @keyframes reveal {

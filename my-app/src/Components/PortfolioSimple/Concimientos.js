@@ -28,7 +28,7 @@ function Conocimientos(){
 
     return(
         <div id="con">
-            <span className="titulo"> tecnologias</span>
+            <span className="titulo con"> tecnologias</span>
             {
                 techs.map((t,i)=>{
                     return(

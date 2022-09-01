@@ -1,17 +1,18 @@
 import React from "react";
-import express from "./techs/express.png"
-import javaScript from "./techs/javaScrypt.png"
-import nodejs from "./techs/nodejs.png"
-import postgress from "./techs/postgress.png"
-import react from "./techs/react.png"
-import redux from "./techs/redux.png"
-import sequelize from "./techs/sequelize.jpg"
-import sql from "./techs/sql.png"
-import css from "./techs/css.png"
-import html from "./techs/html.png"
+import express from "./imgs/express.png"
+import javaScript from "./imgs/javaScrypt.png"
+import nodejs from "./imgs/nodejs.png"
+import postgress from "./imgs/postgress.png"
+import react from "./imgs/react.png"
+import redux from "./imgs/redux.png"
+import sequelize from "./imgs/sequelize.jpg"
+import sql from "./imgs/sql.png"
+import css from "./imgs/css.png"
+import html from "./imgs/html.png"
+import "./Tecnologias.css"
 
 
-function Conocimientos(){
+function Tecnologias({len}){
 
     const techs = [
         {name:"express",img:express,link:"https://expressjs.com/"},
@@ -26,9 +27,19 @@ function Conocimientos(){
         {name:"html",img:html,link:"https://html.com/"}
     ]
 
+    const info = {
+        EN:{
+            titulo:"TECHNOLOGIES"
+        },
+        ES:{
+            titulo:"TECNOLOGIAS"
+        },
+    }
+
     return(
-        <div id="con">
-            <span className="titulo con">TECNOLOGIAS</span>
+        <>
+            <span className="titulo">{info[len].titulo}</span>
+            <div className="area" id="tecnologias">
             {
                 techs.map((t,i)=>{
                     return(
@@ -39,11 +50,9 @@ function Conocimientos(){
                     )
                 })
             }
-            <div>
-
             </div>
-        </div>
+        </>
     )   
 }
 
-export default Conocimientos
+export default Tecnologias

@@ -1,83 +1,47 @@
 import React, { useState } from "react"
-import Conocimientos from "./Concimientos"
-import Proyectos from "./Proyectos"
-import Contacto from "./Contacto"
-import Presentacion from "./Presentacion"
+import Tecnologias from "./techs/Tecnologias"
+import Proyectos from "./proyectos/Proyectos"
+import Contacto from "./contacto/Contacto"
+import Presentacion from "./presentacion/Presentacion"
 import "./Portfolio.css"
 const PortfolioSimple=()=>{
 
-    // const [prev,setPrev] = useState("cont")
-    // const [actual,setActual] = useState("pres")
-    // const [next,setNext] = useState("con")
-    // const [divs,setDivs] = useState({pres:"",con:"hide",proy:"hide",cont:"hide"})
-    
-    // function previo(){
-    //     setDivs({...divs,})
-    //     divs[prev]="left"
-    //     divs[actual]="hideRigth"
-    //     divs[prev]="left showLeft"
-    //     divs[actual]="hide"
-
-    //     switch(actual){
-    //         case "pres":
-    //             setPrev("proy")
-    //             setActual("cont")
-    //             setNext("pres")
-    //         break
-
-    //         case "con":
-    //             setPrev("cont")
-    //             setActual("pres")
-    //             setNext("con")
-    //         break
-
-    //         case "proy":
-    //             setPrev("pres")
-    //             setActual("con")
-    //             setNext("proy")
-    //         break
-
-    //         case "cont":
-    //             setPrev("con")
-    //             setActual("proy")
-    //             setNext("cont")
-    //         break
-    //     }
-
-    // }
-
     const divs = ["pres","techs","proy","cont"]
-    const completDivs = ["presentación","tecnologías","proyectos","contacto"]
 
+    let [toogletype,setType]=useState("toogleB")
     let [actual,setActual] = useState("pres")
+    let [lenguaje,setLenguaje] = useState("ES")
 
-    // function previo(){
-    //     if(actual[0]==="pres"){
-    //         setActual(["cont","3"])
-    //     } 
-    //     else {
-    //         setActual([divs[actual[1]-1],actual[1]-1])
-    //     }
-    // }
+    const info = {
+        EN:{
+            Sections:"<Sections>",
+            completDivs:["presentation","technologies","proyects","contact"],
+        },
+        ES:{
+            Sections:"<Secciones>",
+            completDivs:["presentación","tecnologías","proyectos","contacto"]
+        }
+    }
 
     return(
         <div>
             <div id="portfolio">
-                {/* <button onClick={()=>previo()} id="prev">{"<"}</button> */}
                 {
-                    actual==="techs"?<Conocimientos/>
-                    :actual==="proy"?<Proyectos/>
-                    :actual==="cont"?<Contacto/>
-                    :<Presentacion/>
+                    actual==="techs"?<Tecnologias len={lenguaje}/>
+                    :actual==="proy"?<Proyectos len={lenguaje}/>
+                    :actual==="cont"?<Contacto len={lenguaje}/>
+                    :<Presentacion len={lenguaje}/>
                 }
             </div>
             <div id="searchBar">
-                <h1 >{"<Secciones>"}</h1>
+                <h1 dataRes="<>">{info[lenguaje].Sections}</h1>
                 {divs.map((d,i)=>{
-                    return <div onMouseLeave={(e)=>e.target.innerText=actual===d?d:"-"} onMouseEnter={(e)=>e.target.innerText=completDivs[i]} className={actual===d?"active":"inactive"} onClick={(e)=>setActual(d)}>{actual===d?d:"-"}</div>
+                    return <div onMouseLeave={(e)=>e.target.innerText=actual===d?">"+d+"<":"-"} onMouseEnter={(e)=>e.target.innerText=info[lenguaje].completDivs[i]} onClick={(e)=>setActual(d)}>{actual===d?">"+d+"<":"-"}</div>
                 })}
-                <h1 >{"</Secciones>"}</h1>
+                <h1>{info[lenguaje].Sections}</h1>
             </div>
+            <span onMouseEnter={()=>setType("toogleB2")} onMouseLeave={()=>setType("toogleB")} onClick={(e)=>{setLenguaje(lenguaje==="EN"?"ES":"EN")}} id={toogletype}>{lenguaje}</span>
+            <span onMouseEnter={()=>setType("toogleB2")} onMouseLeave={()=>setType("toogleB")} onClick={(e)=>{setLenguaje(lenguaje==="EN"?"ES":"EN")}} id="toogleS">toogle</span>
         </div>
     )
 }

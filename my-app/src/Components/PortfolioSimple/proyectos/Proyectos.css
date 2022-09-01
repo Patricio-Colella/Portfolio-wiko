@@ -1,0 +1,185 @@
+#proyectos{
+    display: flex;
+    flex-direction: column;
+}
+
+#proyectosMap{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    margin-top: 2%;
+}
+
+.proyecto img{
+    width: 40%;
+    height: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius:100%;
+    transition-duration: 500ms;
+}
+
+.proyecto img:hover{
+    transform: scale(130%);
+    transition-duration: 500ms;
+}
+
+.proyecto a{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size: large;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0px 4px 4px rgb(37, 37, 37);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration-line: none;
+    font-weight: 100;
+    background-color: greenyellow;
+}
+
+
+
+
+.hidden{ 
+    transform: scaleX(0%) scaleY(5%);
+    display: flex;
+    flex-direction: row;
+    animation: revanimmm 0.5s;
+    position: relative;
+    bottom: -20%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height:100%;
+    padding-bottom: 10%;
+}
+
+@keyframes revanimmm {
+    0%{transform: scaleX(100%) scaleY(100%);}
+    50%{transform: scaleX(100%) scaleY(5%);}
+    100%{transform: scaleX(0%) scaleY(5%);}
+}
+
+.show{
+    animation: animmm 0.5s;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: -20%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height:100%;
+    padding-bottom: 10%;
+}
+
+@keyframes animmm {
+    0%{transform: scaleX(0%) scaleY(5%);}
+    50%{transform: scaleX(100%) scaleY(5%);}
+    100%{transform: scaleX(100%) scaleY(100%);}
+}
+
+.show div,.hidden div{
+    text-align: start;
+    width: 100%;
+    height: 80%;
+    font-size: 15px;
+    background-color: rgba(0, 128, 0, 0.541);
+    padding: 1%;
+    color:green;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    text-shadow: -2px 2px black;
+    -webkit-text-stroke: 1px black;
+}
+
+#arrow{
+    color: green;
+    transform: scale(1,10);
+    -webkit-text-stroke: 1px black;
+}
+
+@media only screen and (max-width:900px) {
+    #proyectos{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 30%;
+        margin-top: 2%;
+    }
+    
+    @keyframes revanimmm {
+        0%{transform: scaleX(100%) scaleY(100%);}
+        50%{transform: scaleX(100%) scaleY(5%);}
+        100%{transform: scaleX(0%) scaleY(5%);}
+    }
+    
+    .show{
+        animation: animmm 0.5s;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        /* bottom: -20%; */
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height:70%;
+        margin-bottom: 10%;
+        /* padding-bottom: 10%; */
+    }
+    
+    @keyframes animmm {
+        0%{transform: scaleX(0%) scaleY(5%);}
+        50%{transform: scaleX(100%) scaleY(5%);}
+        100%{transform: scaleX(100%) scaleY(100%);}
+    }
+    
+    .show div,.hidden div{
+        /* text-align: start; */
+        margin-bottom: 80%;
+        width: 90%;
+        height: 70%;
+        font-size: 10px;
+        background-color: rgba(0, 128, 0, 0.541);
+        padding: 1%;
+        color:green;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+        text-shadow: -2px 2px black;
+        -webkit-text-stroke: 1px black;
+        overflow: scroll;
+    }
+    
+    #arrow{
+        margin-bottom: 80%;
+        color: green;
+        transform: scale(1,10);
+        -webkit-text-stroke: 1px black;
+    }
+}

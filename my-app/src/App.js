@@ -7,11 +7,11 @@ import PortfolioSimple from './Components/PortfolioSimple/PortfolioSimple';
 
 
 
+
 function App() {
   return(
   <Routes>
-
-    <Route  path={'/landing'} element={<Landing/>}/>
+    <Route  path={'/'} element={<Landing/>}/>
     <Route path={'/simple'} element={<PortfolioSimple/>}/>
     <Route path={'/arcade'} element={<Character/>}/>
 

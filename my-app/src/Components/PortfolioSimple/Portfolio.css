@@ -23,7 +23,7 @@
     line-height: 100%;
     color: green;
     text-shadow: -10px 10px rgb(37, 37, 37) ;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     transform: scale(1, 1.5) translateX(0%);
     border-color: black;
     border-style: solid;
@@ -67,7 +67,7 @@
     line-height: 100%;
     color: green;
     text-shadow: -2px 2px rgb(37, 37, 37) ;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     transform: scale(1, 1.5);
     border-color: black;
     border-style: solid;
@@ -85,7 +85,7 @@
     text-align: center;
     color: green;
     width: 60%;
-    font-family: fantasy;
+    /* font-family: fantasy; */
     transform: scale(1.5, 3);
     background-color: rgba(41, 144, 41, 0.7);
     border-color: black;
@@ -116,8 +116,8 @@
 
 #searchBar div,#searchBar h1{
     color:green;
-    font-family:monospace;
-    transform: scale(100%, 200%);
+    /* font-family:monospace; */
+    transform: scale(80%, 180%);
     border-color: black;
     border-style: solid;
     -webkit-text-stroke: 1px rgb(0, 170, 6);
@@ -125,7 +125,7 @@
 }
 
 #searchBar h1{
-    width: 50%;
+    width: 75%;
     margin-right: 5vw;
     align-items: center;
 }
@@ -241,7 +241,7 @@
         letter-spacing: 2px;
         color: green;
         text-shadow: -10px 10px rgb(37, 37, 37) ;
-        font-family: fantasy;
+        /* font-family: fantasy; */
         transform: scale(1, 1.5) translateX(0%);
         border-color: black;
         border-style: solid;
@@ -283,7 +283,7 @@
         line-height: 100%;
         color: green;
         text-shadow: -2px 2px rgb(37, 37, 37) ;
-        font-family: fantasy;
+        /* font-family: fantasy; */
         transform: scale(1, 1.5);
         border-color: black;
         border-style: solid;
@@ -302,7 +302,7 @@
         color: green;
         width: 60%;
         height: 30%;
-        font-family: fantasy;
+        /* font-family: fantasy; */
         transform: scale(1, 1);
         background-color: rgba(41, 144, 41, 0.7);
         border-color: black;
@@ -334,7 +334,7 @@
     
     #searchBar div,#searchBar h1{
         color:green;
-        font-family:monospace;
+        /* font-family:monospace; */
         transform: scale(100%, 200%);
         border-color: black;
         border-style: solid;

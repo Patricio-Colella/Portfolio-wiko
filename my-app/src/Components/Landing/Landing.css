@@ -18,7 +18,7 @@
         border-width: 1px;
         padding: 4px;
         border-style: solid;
-        font-family:'Courier New', Courier, monospace;
+        /* font-family:'Courier New', Courier, monospace; */
     }
     #red{
         left:15vw;
@@ -41,7 +41,7 @@
         cursor: pointer;
         transition-delay: 10ms;
         background-color: rgb(46, 231, 46);
-        font-family:"Stencil Std, fantasy";
+        /* font-family:"Stencil Std, fantasy"; */
         border-color: green;
         box-shadow:0px 2px black;
         font-size: 10px;
@@ -63,7 +63,7 @@
         border-width: 1px;
         padding: 4px;
         border-style: solid;
-        font-family:'Courier New', Courier, monospace;
+        /* font-family:'Courier New', Courier, monospace; */
     }
     #red{
         position: relative;
@@ -88,7 +88,7 @@
         cursor: pointer;
         transition-delay: 10ms;
         background-color: rgb(46, 231, 46);
-        font-family:"Stencil Std, fantasy";
+        /* font-family:"Stencil Std, fantasy"; */
         border-color: green;
         box-shadow:0px 2px black;
         font-size: 10px;
